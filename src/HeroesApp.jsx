@@ -1,9 +1,9 @@
 // eslint-disable-next-line react/prop-types
-export const HeroesApp = (props) => {
+export const HeroesApp = ({ hola }) => {
   return (
     <p>
-      {console.log(props)}
-      {props}
+      {console.log(hola)}
+      {hola}
     </p>
   );
 };
