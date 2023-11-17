@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useLocation } from 'react-router-dom';
 import { useForm } from '../../hooks/useForm';
 import { useMemo } from 'react';
@@ -5,7 +6,6 @@ import { getHeroesByName } from '../../selectors/getHeroesByName';
 import queryString from 'query-string';
 import { HeroCard } from '../heroes/HeroCard';
 export const SearchScreen = ({ history }) => {
-  debugger;
   const location = useLocation();
   const { q = '' } = queryString.parse(location.search);
 
