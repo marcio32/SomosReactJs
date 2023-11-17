@@ -34,6 +34,23 @@ export const Navbar = () => {
           >
             Marvel
           </NavLink>
+          <NavLink
+            activeClassName="active"
+            className="nav-item nav-link"
+            exact
+            to="/dc"
+          >
+            Dc
+          </NavLink>
+
+          <NavLink
+            activeClassName="active"
+            className="nav-item nav-link"
+            exact
+            to="/search"
+          >
+            Search
+          </NavLink>
         </div>
       </div>
 

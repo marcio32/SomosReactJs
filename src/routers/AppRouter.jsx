@@ -3,8 +3,8 @@ import { AuthContext } from '../auth/AuthContext';
 import { BrowserRouter as Router, Switch } from 'react-router-dom';
 import { PublicRoute } from './PublicRoute';
 import { PrivateRoute } from './PrivateRoute';
-import { LoginScreen } from '../components/loginScreen';
 import { DashboardRoutes } from './DashboardRoutes';
+import { LoginScreen } from '../components/login/loginScreen';
 
 export const AppRouter = () => {
   const { user } = useContext(AuthContext);
