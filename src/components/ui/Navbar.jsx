@@ -19,7 +19,7 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand.ms navbar-dark bn-dark">
+    <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
       <Link className="navbar-brand" to="/">
         Asociaciones
       </Link>
@@ -29,6 +29,7 @@ export const Navbar = () => {
           <NavLink
             activeClassName="active"
             className="nav-item nav-link"
+            exact
             to="/marvel"
           >
             Marvel
@@ -41,7 +42,7 @@ export const Navbar = () => {
           <span className="nav-item nav-link text-info">{name}</span>
 
           <button className="nav-item nav-link btn" onClick={handleLogout}>
-            Cerrar Sesion
+            Logout
           </button>
         </ul>
       </div>
